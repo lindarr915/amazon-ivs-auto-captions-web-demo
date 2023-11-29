@@ -6,7 +6,7 @@ if [ -z $1 ]; then
 fi
 
 STACK_FILE_PATH=$1
-S3_BUCKET_URI=s3://ivs-transcribe-demo-player-app-<RANDOM_SUFFIX>/
+S3_BUCKET_URI=s3://ivs-transcribe-demo-player-app-gltxli/
 
 printf "\n\nGenerating environment variables file for Player App..."
 node generate-player-app-env-vars.js $STACK_FILE_PATH

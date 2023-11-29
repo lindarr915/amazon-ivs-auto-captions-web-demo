@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://localhost:3000",
+            "request": "launch",
+            "url": "http://localhost:3000"
+        },
+        {
+            "type": "chrome",
+            "name": "http://18.183.185.181",
+            "request": "launch",
+            "url": "http://18.183.185.181"
+        }
+    ]
+}

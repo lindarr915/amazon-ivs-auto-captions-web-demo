@@ -7,10 +7,10 @@ fi
 
 VOCABULARY_FILTER_FILE_PATH=$1
 
-VOCABULARY_FILTER_NAME=ivs-transcribe-demo-vocabulary-filter-<RANDOM_SUFFIX>
+VOCABULARY_FILTER_NAME=ivs-transcribe-demo-vocabulary-filter-gltxli
 LANGUAGE_CODE=en-US
 
-S3_BUCKET=ivs-transcribe-demo-vocabulary-config-<RANDOM_SUFFIX>
+S3_BUCKET=ivs-transcribe-demo-vocabulary-config-gltxli
 FILE_NAME=vocabulary-filter.txt
 VOCABULARY_FILTER_FILE_URI=s3://$S3_BUCKET/$FILE_NAME
 

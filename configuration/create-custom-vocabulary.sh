@@ -8,10 +8,10 @@ fi
 VOCABULARY_FILE_PATH=$1
 AWS_REGION=$(aws configure get region)
 
-VOCABULARY_NAME=ivs-transcribe-demo-custom-vocabulary-<RANDOM_SUFFIX>
+VOCABULARY_NAME=ivs-transcribe-demo-custom-vocabulary-gltxli
 LANGUAGE_CODE=en-US
 
-S3_BUCKET=ivs-transcribe-demo-vocabulary-config-<RANDOM_SUFFIX>
+S3_BUCKET=ivs-transcribe-demo-vocabulary-config-gltxli
 FILE_NAME=custom-vocabulary.txt
 VOCABULARY_FILE_URI=s3://$S3_BUCKET/$FILE_NAME
 

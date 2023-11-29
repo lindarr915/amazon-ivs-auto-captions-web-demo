@@ -29,7 +29,7 @@ const ClosedCaptionPlayer = ({ streamUrl }) => {
   const [placeHolderStatus, setPlaceHolderStatus] = useState('loading');
   const [showSettings, setShowSettings] = useState(false);
   const [showTranslate, setShowTranslate] = useState(false);
-  const [showDebugInfo, setShowDebugInfo] = useState(false);
+  const [showDebugInfo, setShowDebugInfo] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [wsCaptionsUrl, setWsCaptionsUrl] = useState(`${config.WS_CAPTIONS_URL}?lang=${config.AUDIO_LANGUAGE_CODE}`);
   const [transcriptionsQueue, setTranscriptionsQueue] = useState([]);
@@ -301,8 +301,8 @@ const ClosedCaptionPlayer = ({ streamUrl }) => {
       playerLiveLatency = player.current.getLiveLatency();
     }
 
-    const timeCorrection = -(playerStartOffset + playerLiveLatency);
-    const endTimeCorrection = timeCorrection + CAPTIONS_MAX_DISPLAY_TIME;
+    const timeCorrection = -(playerStartOffset + playerLiveLatency) - 0.6 ;
+    const endTimeCorrection = timeCorrection + CAPTIONS_MAX_DISPLAY_TIME - 0.6;
 
     const startTime = newCaption.startTime + timeCorrection;
     const endTime = newCaption.endTime + endTimeCorrection;

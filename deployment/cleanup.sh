@@ -2,14 +2,14 @@
 echo
 read -p "Stack name: " STACKNAME
 
-VOCABULARY_CONFIG_BUCKET=s3://ivs-transcribe-demo-vocabulary-config-<RANDOM_SUFFIX>
-PLAYER_BUCKET=s3://ivs-transcribe-demo-player-app-<RANDOM_SUFFIX>
-LAMBDA_FUNCTIONS_BUCKET=s3://ivs-transcribe-demo-lambda-functions-<RANDOM_SUFFIX>
-STREAM_REPOSITORY_NAME=ivs-transcribe-demo-stream-images-<RANDOM_SUFFIX>
-TRANSCRIBE_REPOSITORY_NAME=ivs-transcribe-demo-transcribe-images-<RANDOM_SUFFIX>
-TRANSLATE_REPOSITORY_NAME=ivs-transcribe-demo-translate-images-<RANDOM_SUFFIX>
-VOCABULARY_NAME=ivs-transcribe-demo-custom-vocabulary-<RANDOM_SUFFIX>
-VOCABULARY_FILTER_NAME=ivs-transcribe-demo-vocabulary-filter-<RANDOM_SUFFIX>
+VOCABULARY_CONFIG_BUCKET=s3://ivs-transcribe-demo-vocabulary-config-gltxli
+PLAYER_BUCKET=s3://ivs-transcribe-demo-player-app-gltxli
+LAMBDA_FUNCTIONS_BUCKET=s3://ivs-transcribe-demo-lambda-functions-gltxli
+STREAM_REPOSITORY_NAME=ivs-transcribe-demo-stream-images-gltxli
+TRANSCRIBE_REPOSITORY_NAME=ivs-transcribe-demo-transcribe-images-gltxli
+TRANSLATE_REPOSITORY_NAME=ivs-transcribe-demo-translate-images-gltxli
+VOCABULARY_NAME=ivs-transcribe-demo-custom-vocabulary-gltxli
+VOCABULARY_FILTER_NAME=ivs-transcribe-demo-vocabulary-filter-gltxli
 
 # The following buckets are just emptied, since they are included in the CloudFormation
 # template and will be removed along with the stack
